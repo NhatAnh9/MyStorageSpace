@@ -114,7 +114,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
                 alt="Loader"
                 width={24}
                 height={24}
-                className="animate-spint ml-2"
+                className="animate-spin ml-2"
               />
             )}
           </Button>

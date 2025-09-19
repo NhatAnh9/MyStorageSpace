@@ -29,7 +29,7 @@ const FileUploader = ({ ownerId, accountId, className }: Props) => {
           return toast({
             description: (
               <p className="body-2 text-white">
-                <span className="semi-bold"> {file.name}</span>
+                <span className="font-semibold"> {file.name}</span>
                 is too large. Max file size is 50MB
               </p>
             ),
@@ -78,7 +78,7 @@ const FileUploader = ({ ownerId, accountId, className }: Props) => {
             const { type, extension } = getFileType(file.name);
             return (
               <li
-                key={`${file.name} - {index}`}
+                key={`${file.name} - ${index}`}
                 className="uploader-preview-item"
               >
                 <div className="flex items-center gap-3">

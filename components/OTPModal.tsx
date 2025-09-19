@@ -33,7 +33,7 @@ const OTPModal = ({
     e.preventDefault();
     setIsLoading(true);
     try {
-      const sessionId = await verifySecret({accountId, password});
+      const { sessionId } = await verifySecret({ accountId, password }) || {};
       if(sessionId) router.push("/")
     } catch (error) {
       console.log(error);
