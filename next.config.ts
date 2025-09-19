@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cdn.pixabay.com",
+        hostname: "media.istockphoto.com",
       },
       {
         protocol: "https",
@@ -25,6 +25,10 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "cloud.appwrite.io",
+      },
+       {
+        protocol: "https",
+        hostname: "syd.cloud.appwrite.io",
       },
     ],
   },
